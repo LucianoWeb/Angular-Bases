@@ -1,0 +1,16 @@
+<h3>Agregar</h3>
+    <hr>
+    <form (ngSubmit)="agregar()"> <!-- es igual al e.preventDefault. hay que importar el modulo FormsModule en el modulo que contiene este componente -->
+      <input 
+      type="text" 
+      placeholder="Nombre"
+      name="nombre"
+      [(ngModel)]="nuevo.nombre" 
+      ><!-- el ngmodel es como el value de react, le decimos que queremos cmbiar el valor de nuevo.nombre-->
+      <input 
+      type="number" 
+      placeholder="Poder"
+      name="podas"
+      [(ngModel)]="nuevo.poder">
+      <button type="submit">Agregar</button>
+    </form>
